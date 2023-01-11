@@ -6,10 +6,12 @@ import androidx.lifecycle.viewModelScope
 import com.marcospb.testtribal.data.models.DetailResponse
 import com.marcospb.testtribal.data.repository.ChuckNorrisRepository
 import com.marcospb.testtribal.utils.ResourceState
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@HiltViewModel
 class DetailViewModel @Inject constructor(private val repository: ChuckNorrisRepository) :
     ViewModel() {
 
